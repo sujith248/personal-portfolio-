@@ -28,7 +28,7 @@ export default function Welcome() {
             <span ref={textRef}>Developer</span>
           </h3>
         </div>
-        <a href="#contact">
+        <a href="#background">
           <img src="assets/down.png" alt="" />
         </a>
       </div>

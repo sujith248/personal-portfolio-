@@ -1,6 +1,8 @@
+import './background.scss';
+
 const Background = () => {
     return(
-        <div>Background</div>
+        <div id="background" className='background'>Background</div>
     )
 }
 
