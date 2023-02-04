@@ -1,7 +1,22 @@
 import "./topbar.scss";
-import { Person, Mail } from "@material-ui/icons";
+import { Person, Mail, CloudDownloadOutlined } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
+
+  const DownloadPDF = () => {
+    fetch('resume.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'resume.pdf';
+          alink.click();
+      })
+  })
+  }
+
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -16,6 +31,10 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <Mail className="icon" />
             <span>sujithdachepally24@gmail.com</span>
+          </div>
+          <div className="itemContainer" onClick={() => DownloadPDF()} style={{cursor: 'pointer'}}>
+            <CloudDownloadOutlined className="icon" />
+            <span>Download Resume</span>
           </div>
         </div>
         <div className="right">
