@@ -1,11 +1,13 @@
+import { useState } from "react";
 import Topbar from "./components/topbar/Topbar";
 import Background from "./components/background/Background"
-// import Works from "./components/works/Works"
 import Contact from "./components/contact/Contact"
-import "./app.scss"
-import { useState } from "react";
 import Menu from "./components/menu/Menu";
 import Welcome from "./components/Welcome/Welcome";
+import CoverLetter from "./components/cover-letter/CoverLetter";
+import ReflectionOne from "./components/reflections/ReflectionOne";
+import ReflectionTwo from "./components/reflections/ReflectionTwo";
+import "./app.scss"
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -16,7 +18,9 @@ function App() {
      <div className="sections">
        <Welcome/>
        <Background />
-       {/* <Works/> */}
+       <ReflectionOne />
+       <ReflectionTwo />
+       <CoverLetter />
        <Contact/>
      </div>
     </div>

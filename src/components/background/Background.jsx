@@ -3,7 +3,7 @@ import './background.scss';
 const Background = () => {
     return(
         <div id="background" className='background'>
-            <h1>About Me</h1>
+            <h1 style={{color: 'crimson'}}>About Me</h1>
             <br />
             <p>
                 I am an aspiring final-year software engineering student, a part-time software intern at UTS Rapido, and a coding instructor.

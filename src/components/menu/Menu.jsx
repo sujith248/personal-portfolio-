@@ -10,12 +10,15 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <li onClick={()=>setMenuOpen(false)}>
           <a href="#background">About Me</a>
         </li>
-        {/* <li onClick={()=>setMenuOpen(false)}>
-          <a href="#works">Works</a>
-        </li> */}
-        {/* <li onClick={()=>setMenuOpen(false)}>
-          <a href="#testimonials">Testimonials</a>
-        </li> */}
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#reflectionOne">Reflection One</a>
+        </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#reflectionTwo">Reflection Two</a>
+        </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#coverLetter">Cover Letter</a>
+        </li>
         <li onClick={()=>setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li>
