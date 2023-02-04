@@ -1,7 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 // import Portfolio from "./components/portfolio/Portfolio"
 // import Works from "./components/works/Works"
-// import Contact from "./components/contact/Contact"
+import Contact from "./components/contact/Contact"
 import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
@@ -17,7 +17,7 @@ function App() {
        <Welcome/>
        {/* <Portfolio/> */}
        {/* <Works/> */}
-       {/* <Contact/> */}
+       <Contact/>
      </div>
     </div>
   );

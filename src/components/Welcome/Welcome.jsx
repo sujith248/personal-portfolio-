@@ -1,18 +1,17 @@
 import "./welcome.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 export default function Welcome() {
   const textRef = useRef();
 
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      backSpeed:60,
-      strings: ['"Developer"', "Learner"],
-    });
-  }, []);
+//   useEffect(() => {
+//     init(textRef.current, {
+//       showCursor: true,
+//       backDelay: 1500,
+//       backSpeed:60,
+//       strings: ['"Developer"', "Learner"],
+//     });
+//   }, []);
 
   return (
     <div className="intro" id="intro">
@@ -26,10 +25,10 @@ export default function Welcome() {
           <h2>Hi There, I'm</h2>
           <h1>Sujith Dachepally</h1>
           <h3>
-            <span ref={textRef}></span>
+            <span ref={textRef}>Developer</span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#contact">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
