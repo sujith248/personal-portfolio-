@@ -2,7 +2,7 @@ import './background.scss';
 
 const Background = () => {
     return(
-        <div id="background" className='background next'>
+        <div id="background" className='background'>
             <h1>About Me</h1>
             <br />
             <p>
