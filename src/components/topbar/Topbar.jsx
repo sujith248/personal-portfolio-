@@ -1,5 +1,6 @@
 import "./topbar.scss";
-import { Person, Mail, CloudDownloadOutlined } from "@material-ui/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faUser, faEnvelope, faDownload} from '@fortawesome/free-solid-svg-icons'
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
 
@@ -25,15 +26,15 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             Dach.
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
+          <FontAwesomeIcon icon={faUser} className="icon"/>
             <span>0403967319</span>
           </div>
           <div className="itemContainer">
-            <Mail className="icon" />
+          <FontAwesomeIcon icon={faEnvelope} className="icon"/>  
             <span>sujithdachepally24@gmail.com</span>
           </div>
           <div className="itemContainer" onClick={() => DownloadPDF()} style={{cursor: 'pointer'}}>
-            <CloudDownloadOutlined className="icon" />
+          <FontAwesomeIcon icon={faDownload} className="icon"/>
             <span>Download Resume</span>
           </div>
         </div>
